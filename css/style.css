@@ -61,7 +61,7 @@ b {
 }
 #liner::before {
   color: #519975;
-  content: "visitor@matt.netlify.app:~$";
+  content: "visitor@matt88.netlify.app:~$";
 }
 #liner.password::before {
   content: "Password:";
@@ -128,4 +128,8 @@ a:hover {
 }
 a:focus {
   outline: 0;
+}
+.warning {
+  color: #FF6B6B;
+  font-weight: bold;
 }

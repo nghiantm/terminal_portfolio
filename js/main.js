@@ -55,7 +55,7 @@ function enterKey(e) {
     if (e.keyCode == 13) {
       commands.push(command.innerHTML);
       git = commands.length;
-      addLine("visitor@matt.netlify.app:~$ " + command.innerHTML, "no-animation", 0);
+      addLine("visitor@matt88.netlify.app:~$ " + command.innerHTML, "no-animation", 0);
       // remove nbsp from variable, it was added to show spaces on terminal
       commander(command.innerHTML.toLowerCase().replace(/&nbsp;/g, ""));
       command.innerHTML = "";
@@ -95,6 +95,12 @@ function commander(cmd) {
         window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
       }, 1000); 
       break;
+    case "resume":
+      addLine('A pigeon is bringing the paper', "color2", 80);
+      setTimeout(() => {
+        window.open('https://www.cs.drexel.edu/~mn839/matt.pdf', '_blank');
+      }, 80*6); // Match the delay in addLine
+      break;
     case "linkedin":
       addLine('Opening: <a href="https://www.linkedin.com/in/nghiantm/" target="_blank">linkedin.com/in/nghiantm/</a>', "color2", 80);
       setTimeout(() => {
@@ -132,38 +138,16 @@ function commander(cmd) {
       addLine("<br>", "command", 80 * commands.length + 50);
       break;
     case "email":
-      addLine('Opening mailto:<a href="mailto:forrest@fkcodes.com">forrest@fkcodes.com</a>...', "color2", 80);
-      newTab(email);
+      addLine('Sending a pigeon to: <a href="mailto:mn839@drexel.edu" target="_blank">mn839@drexel.edu</a>', "color2", 80);
+      setTimeout(function() {
+        newTab(email);
+      }, 80*6); // Match the delay in addLine
       break;
     case "clear":
       setTimeout(function() {
         terminal.innerHTML = '<a id="before"></a>';
         before = document.getElementById("before");
       }, 1);
-      break;
-    case "banner":
-      loopLines(banner, "", 80);
-      break;
-    // socials
-    case "youtube":
-      addLine("Opening YouTube...", "color2", 80);
-      newTab(youtube);
-      break;
-    case "twitter":
-      addLine("Opening Twitter...", "color2", 0);
-      newTab(twitter);
-      break;
-    case "linkedin":
-      addLine("Opening LinkedIn...", "color2", 0);
-      newTab(linkedin);
-      break;
-    case "instagram":
-      addLine("Opening Instagram...", "color2", 0);
-      newTab(instagram);
-      break;
-    case "github":
-      addLine("Opening GitHub...", "color2", 0);
-      newTab(github);
       break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
