@@ -26,7 +26,7 @@ secret = [
 projects = [
   "<br>",
   "<a href='https://r-talk.netlify.app/' target='_blank'>rTalk</a>                AI-powered conversations for language learning",
-  "<a href='#' target='_blank'>Study Buddy</a>          Personal assistant for every students",
+  "<a href='https://study-buddyy.netlify.app' target='_blank'>Study Buddy</a>          Personal assistant for every students",
   "<a href='https://tradequest.netlify.app/' target='_blank'>Trade Quest</a>          Risk-free trading platform for beginners",
   "<a href='https://github.com/nghiantm/movie-rec' target='_blank'>Movie Recommender</a>    Personalized recommendations with collaborative filtering",
   "<a href='#'>Personal Website</a>     Interactive web terminal for personal portfolio",
