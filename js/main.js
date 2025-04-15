@@ -9,6 +9,9 @@ var pw = false;
 let pwd = false;
 var commands = [];
 
+// get user's weather
+getUserWeather();
+
 setTimeout(function() {
   loopLines(banner, "", 80);
   textarea.focus();
