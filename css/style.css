@@ -1,3 +1,6 @@
+html {
+  background-color: #171819; /* Set the global background color */
+}
 body {
   margin: 0;
   padding: 15px 20px;
@@ -5,7 +8,7 @@ body {
   width: 100%;
   min-width: 550px;
   color: #519975;
-  background: #211D1B;
+  background: #171819;
   font-family: cursor, monospace;
   overflow-x: hidden;
 }
