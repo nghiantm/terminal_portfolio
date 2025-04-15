@@ -9,13 +9,13 @@ var pw = false;
 let pwd = false;
 var commands = [];
 
-// get user's weather
-getUserWeather();
-
-setTimeout(function() {
-  loopLines(banner, "", 80);
+setTimeout(async function() {
+  const weather = await getUserWeather();
+  await loopLines(banner, "", 80);
+  await loopLines(weather, "", 80);
+  await loopLines(banner_welcome, "", 80);
   textarea.focus();
-}, 100);
+}, 10);
 
 window.addEventListener("keyup", enterKey);
 
@@ -186,7 +186,12 @@ function addLine(text, style, time) {
 }
 
 function loopLines(name, style, time) {
-  name.forEach(function(item, index) {
-    addLine(item, style, index * time);
+  return new Promise((resolve) => {
+    name.forEach(function (item, index) {
+      addLine(item, style, index * time);
+    });
+
+    // Resolve the promise after the last line is added
+    setTimeout(resolve, name.length * time);
   });
 }
