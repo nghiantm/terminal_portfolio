@@ -26,7 +26,9 @@ async function getUserWeather() {
 }
 
 // This function selects the weather pattern based on the current weather data
-// It checks for precipitation -> wind speed -> cloud cover -> and day/night status                                       
+// It checks for precipitation -> wind speed -> cloud cover -> and day/night status   
+// Return format: [ascii art, weather description]
+// If no pattern is found, it returns a chaos pattern                                
 function selectPattern(currentWeather) {
     if (currentWeather.precipitation > 0) {
         if (currentWeather.snowfall > currentWeather.rain) {
@@ -42,11 +44,12 @@ function selectPattern(currentWeather) {
         return [weatherPatterns.wind, "Windy"];
     } else if (currentWeather.cloud_cover > CLOUDY) {
         return [weatherPatterns.clouds, "Cloudy"];
-    } else {
-        if (currentWeather.is_day) {
+    } else if (currentWeather.is_day) {
             return [weatherPatterns.sunny, "Sunny"];
-        }
+    } else if (!currentWeather.is_day) {
         return [weatherPatterns.night, "Night"];
+    } else {
+        return [weatherPatterns.chaos, "????"];
     }
 }
 
