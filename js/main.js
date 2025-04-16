@@ -126,12 +126,6 @@ function commander(cmd) {
     case "projects":
       loopLines(projects, "color2 margin", 80);
       break;
-    case "photographs":
-      addLine("Opening my gallery: <a href='https://500px.com/p/nghiantm' target='_blank'>500px.com/p/nghiantm</a>", "color2", 80);
-      setTimeout(function() {
-        window.open('https://500px.com/p/nghiantm', '_blank');
-      }, 80*6); // Match the delay in addLine
-      break;
     case "password":
       addLine("<span class=\"inherit\"> Lol! You're joking, right? You\'re gonna have to try harder than that!😂</span>", "error", 100);
       break;
