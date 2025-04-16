@@ -146,6 +146,36 @@ function commander(cmd) {
         before = document.getElementById("before");
       }, 1);
       break;
+    case "rtalk":
+      addLine("Opening the rTalk project...", "color2", 80);
+      setTimeout(function() {
+        newTab("https://r-talk.netlify.app/");
+      }, 80*6); // Match the delay in addLine
+      break;
+    case "studybuddy":
+      addLine("Opening the Study Buddy project...", "color2", 80);
+      setTimeout(function() {
+        newTab("https://study-buddyy.netlify.app/");
+      }, 80*6); // Match the delay in addLine
+      break;
+    case "tradequest":
+      addLine("Opening the Trade Quest project...", "color2", 80);
+      setTimeout(function() {
+        newTab("https://tradequest.netlify.app/");
+      }, 80*6); // Match the delay in addLine
+      break;
+    case "movierecommender":
+      addLine("Opening the Movie Recommender repo...", "color2", 80);
+      setTimeout(function() {
+        newTab("https://github.com/nghiantm/movie-rec");
+      }, 80*6); // Match the delay in addLine
+      break;
+    case "personalwebsite":
+      addLine("Opening the Personal Website project...", "color2", 80);
+      setTimeout(function() {
+        newTab("#");
+      }, 80*6); // Match the delay in addLine
+      break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
       break;

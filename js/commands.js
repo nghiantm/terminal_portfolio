@@ -30,7 +30,9 @@ projects = [
   "<a href='https://tradequest.netlify.app/' target='_blank'>Trade Quest</a>          Risk-free trading platform for beginners",
   "<a href='https://github.com/nghiantm/movie-rec' target='_blank'>Movie Recommender</a>    Personalized recommendations with collaborative filtering",
   "<a href='#'>Personal Website</a>     Interactive web terminal for personal portfolio",
-  "<br>"
+  "<br>",
+  "<span class=\"color2\">Use project's name as command to access. E.g. </span> <span class=\"command\">'rtalk'</span><span class=\"color2\">, </span></span> <span class=\"command\">'studybuddy'</span><span class=\"color2\">...</span>",
+  "<br>",
 ];
 
 help = [
