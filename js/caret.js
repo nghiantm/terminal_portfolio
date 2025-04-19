@@ -19,7 +19,6 @@ function typeIt(from, e) {
   e = e || window.event;
   var typer = $("typer");
   var value = from.value;
-  console.log(value)
   setTimeout(() => {
     typer.innerHTML = nl2br(from.value);
   }, 0);
