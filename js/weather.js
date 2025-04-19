@@ -115,7 +115,7 @@ function constructWeatherUrl(latitude, longitude) {
     return `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=is_day,temperature_2m,apparent_temperature,wind_speed_10m,precipitation,snowfall,rain,cloud_cover&timezone=auto&forecast_days=1`;
 }
 
-const HIGH_WIND = 20; // km/h
+const HIGH_WIND = 25; // km/h
 const DRIZZLE = 0.5; // mm/h
 const CLOUDY = 50; // %
 const weatherPatterns = {
@@ -126,21 +126,21 @@ const weatherPatterns = {
     ],
     partial_clouds: [
         "  \\ /(  ) ",
-        " - O(    )",
+        "  -O(   ) ",
         "  / (  )  ",
     ],
     clouds: [
-        "  ( )()_  ",
+        " (  )( )_ ",
         " (      ) ",
-        "  (  )()  "
+        " (   )( ) "
     ],
     night: [
         "   .   *  ",
-        " *    . O ",
-        " . . *  . "
+        " *    . O  ",
+        " . . *  .  "
     ],
     drizzle: [
-        " '  '    '",
+        " '  '    ' ",
         "  '   ' ' ",
         "'    '   '"
     ],
@@ -155,9 +155,9 @@ const weatherPatterns = {
         " /_/'' '' "
     ],
     chaos: [
-        " c__ ''' '",
-        " ' '' c___",
-        " c__ ' 'c_"
+        " c__ ''' ' ",
+        " ' '' c___ ",
+        " c__ ' 'c_ "
     ],
     snow: [
         " * '* ' * ",
