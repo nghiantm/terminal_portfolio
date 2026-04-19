@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MATT | TERMINAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
   </head>
@@ -12,19 +15,19 @@
     <div id="terminal">
       <a id="before"></a>
     </div>
-    <div id="command" onclick="$('texter').focus();">
+    <div id="command" onclick="document.getElementById('texter').focus();">
       <textarea
         type="text"
         id="texter"
-        onkeydown="typeIt(this, event); 
-                   moveIt(this.value.length, event)"
+        onkeydown="typeIt(this, event); moveIt(this.value.length, event)"
         autofocus
       ></textarea>
       <div id="liner">
-        <span id="typer"></span><b class="cursor" id="cursor">█</b>
+        <span id="prompt"><span class="prompt-user">visitor@matt88</span><span class="prompt-colon">:</span><span id="prompt-path">~</span><span class="prompt-dollar">$&nbsp;</span></span><span id="typer"></span><b class="cursor" id="cursor">█</b>
       </div>
     </div>
     <script src="js/caret.js"></script>
+    <script src="js/filesystem.js"></script>
     <script src="js/commands.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/main.js"></script>

@@ -1,6 +1,3 @@
-var password = "fkcodes";
-var email = 'mailto:mn839@drexel.edu';
-
 about = [
   "<br>",
   "Hi, I'm Matt!👋",
@@ -8,12 +5,6 @@ about = [
   "I'm a software engineer who builds weird websites like this.",
   "I enjoy roadtrip, photographing everything single thing, and gaming.",
   "Want to get in touch? Feel free to shoot me an email.",
-  "<br>"
-];
-
-whoami = [
-  "<br>",
-  "The paradox of “Who am I?” is: we never know, but, we constantly find out.",
   "<br>"
 ];
 
@@ -25,38 +16,32 @@ secret = [
 
 projects = [
   "<br>",
-  "<a href='https://r-talk.netlify.app/' target='_blank'>rTalk</a>                AI-powered conversations for language learning",
-  "<a href='https://study-buddyy.netlify.app' target='_blank'>Study Buddy</a>          Personal assistant for every students",
-  "<a href='https://tradequest.netlify.app/' target='_blank'>Trade Quest</a>          Risk-free trading platform for beginners",
-  "<a href='https://github.com/nghiantm/movie-rec' target='_blank'>Movie Recommender</a>    Personalized recommendations with collaborative filtering",
-  "<a href='#'>Personal Website</a>     Interactive web terminal for personal portfolio",
+  "<span class=\"command\">rtalk.md</span>              AI-powered conversations for language learning",
+  "<span class=\"command\">studybuddy.md</span>         Personal assistant for every student",
+  "<span class=\"command\">tradequest.md</span>         Risk-free trading platform for beginners",
+  "<span class=\"command\">movie-recommender.md</span>  Personalized recommendations with collaborative filtering",
   "<br>",
-  "<span class=\"color2\">Use project's name as command to access. E.g. </span> <span class=\"command\">'rtalk'</span><span class=\"color2\">, </span></span> <span class=\"command\">'studybuddy'</span><span class=\"color2\">...</span>",
+  "<span class=\"color2\">Run </span><span class=\"command\">ls projects/</span><span class=\"color2\"> to browse · </span><span class=\"command\">cat projects/&lt;name&gt;.md</span><span class=\"color2\"> for details</span>",
   "<br>",
 ];
 
 help = [
   "<br>",
-  '<span class="command">about</span>          Who am I?',
-  '<span class="command">whoami</span>         Who are you?',
-  '<br>',
-  '<span class="command">projects</span>       View coding projects',
-  '<span class="command">resume</span>         What I did?',
+  '<span class="command">ls</span>             List directory contents',
+  '<span class="command">cd [path]</span>      Change directory',
+  '<span class="command">cat [file]</span>     Read a file',
+  '<span class="command">pwd</span>            Print working directory',
   '<br>',
   '<span class="command">linkedin</span>       My LinkedIn',
   '<span class="command">github</span>         My Github',
-  '<span class="command">website</span>        My personal website',
-  '<span class="command">email</span>          Send me an email',
   '<br>',
   '<span class="command">help</span>           You obviously already know what this does',
   '<span class="command">history</span>        View command history',
   '<span class="command">clear</span>          Clear terminal',
-  '<span class="command">secret</span>         Find the password',
   "<br>",
 ];
 
 banner = [
-  '<span class="warning">WARNING: NOT FOR MOBILE USAGE</span>',
   "<br>",
   "         ___   ____",
   "       /' --;^/ ,-_\\     \\ | /       ",
