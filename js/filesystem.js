@@ -4,7 +4,84 @@ const filesystem = {
     'projects': {
       type: 'dir',
       children: {
-        'rtalk.md': {
+        'expense-sharing-app.md': {
+          type: 'file',
+          content: [
+            '<br>',
+            '<span class="command"># Evenly — Expense Sharing</span>',
+            '<br>',
+            'Splitwise-style app for splitting group expenses and settling up.',
+            'Balances are derived from a ledger of transfers between members.',
+            '<br>',
+            '<span class="command">Stack</span>      React · TypeScript · FastAPI · PostgreSQL · Clerk',
+            '<span class="command">Live</span>       <a href="https://getevenly.app" target="_blank">getevenly.app</a>',
+            '<span class="command">Repo</span>       <a href="https://github.com/nghiantm/evenly" target="_blank">github.com/nghiantm/evenly</a> · <a href="https://github.com/nghiantm/evenly-backend" target="_blank">evenly-backend</a>',
+            '<br>',
+            '<span class="command">Highlights</span>',
+            '  · Groups, expenses and settlements behind a REST API with Clerk JWT auth',
+            '  · A user\'s net balance is the sum of transfers owed to them minus transfers they owe',
+            '  · Async SQLAlchemy with Alembic migrations; tests run against in-memory SQLite',
+            '<br>',
+          ]
+        },
+        'vulnerability-triage-platform.md': {
+          type: 'file',
+          content: [
+            '<br>',
+            '<span class="command"># Sift — Vulnerability Triage Platform</span>',
+            '<br>',
+            'Ingests Grype (SCA) and Semgrep (SAST) findings from every repo in a GitHub org.',
+            'Each finding goes through an auditable triage lifecycle.',
+            '<br>',
+            '<span class="command">Stack</span>      Python · PostgreSQL · Redis · React · TypeScript · Docker',
+            '<br>',
+            '<span class="command">Highlights</span>',
+            '  · One issue per distinct vulnerability, listing every affected repo',
+            '  · Fingerprints ignore whitespace and file moves; suppressions survive small code drift',
+            '  · Scan jobs use leases, heartbeats and a reaper that requeues or dead-letters crashed scans',
+            '<br>',
+          ]
+        },
+        'riscv-hardware-diagnostics.md': {
+          type: 'file',
+          content: [
+            '<br>',
+            '<span class="command"># RV32IM Emulator + Hardware Diagnostics</span>',
+            '<br>',
+            'RISC-V instruction-set emulator in C with no third-party libraries.',
+            'It models a small SoC and runs bare-metal firmware that detects injected hardware faults.',
+            '<br>',
+            '<span class="command">Stack</span>      C · RISC-V assembly · Python · Make',
+            '<span class="command">Repo</span>       <a href="https://github.com/nghiantm/risc-v-emulator" target="_blank">github.com/nghiantm/risc-v-emulator</a>',
+            '<br>',
+            '<span class="command">Highlights</span>',
+            '  · Passes 50 of 50 riscv-tests ISA tests (rv32ui and rv32um)',
+            '  · SoC model with UART, CLINT timer, SYSCON, temperature sensor and fault-injectable RAM',
+            '  · Firmware diagnostics catch 10 of 10 injected faults with no baseline false positives',
+            '<br>',
+          ]
+        },
+        'collaborative-editor.md': {
+          type: 'file',
+          content: [
+            '<br>',
+            '<span class="command"># SafeText — Real-Time Collaborative Editor</span>',
+            '<br>',
+            'Plain-text editor where several people edit one document at once.',
+            'The CRDT engine is written from scratch, and documents can be encrypted end to end.',
+            '<br>',
+            '<span class="command">Stack</span>      React · Vite · TypeScript · Bun · WebSockets · PostgreSQL',
+            '<span class="command">Live</span>       <a href="https://notgoogledocs.vercel.app" target="_blank">notgoogledocs.vercel.app</a>',
+            '<span class="command">Repo</span>       <a href="https://github.com/nghiantm/SafeText" target="_blank">github.com/nghiantm/SafeText</a>',
+            '<br>',
+            '<span class="command">Highlights</span>',
+            '  · Sequence CRDT (RGA variant) with vector-clock ordering, built without y-js',
+            '  · Optional E2EE using PBKDF2 and AES-256-GCM; the server stores only ciphertext',
+            '  · Periodic snapshots keep loads fast on long operation logs',
+            '<br>',
+          ]
+        },
+        'language-learning-ai.md': {
           type: 'file',
           content: [
             '<br>',
@@ -23,7 +100,7 @@ const filesystem = {
             '<br>',
           ]
         },
-        'tradequest.md': {
+        'paper-trading-platform.md': {
           type: 'file',
           content: [
             '<br>',
@@ -42,26 +119,7 @@ const filesystem = {
             '<br>',
           ]
         },
-        'studybuddy.md': {
-          type: 'file',
-          content: [
-            '<br>',
-            '<span class="command"># Study Buddy — AI Study Assistant</span>',
-            '<br>',
-            'Personal AI-powered study assistant for students.',
-            'Turns lecture notes into actionable study material.',
-            '<br>',
-            '<span class="command">Stack</span>      React · Firebase · OpenAI API',
-            '<span class="command">Live</span>       <a href="https://study-buddyy.netlify.app" target="_blank">study-buddyy.netlify.app</a>',
-            '<br>',
-            '<span class="command">Highlights</span>',
-            '  · Automatic flashcard generation from notes',
-            '  · Quiz mode with spaced repetition scheduling',
-            '  · Progress analytics dashboard',
-            '<br>',
-          ]
-        },
-        'movie-recommender.md': {
+        'movie-recommendation-engine.md': {
           type: 'file',
           content: [
             '<br>',
@@ -93,7 +151,7 @@ const filesystem = {
         '  Drexel University — B.S. Computer Science, 2024–2027',
         '<br>',
         '<span class="command">PROJECTS</span>',
-        '  rTalk, Trade Quest, Study Buddy, Movie Recommender',
+        '  Evenly, Sift, RISC-V Emulator, SafeText, rTalk, Trade Quest, Movie Recommender',
         '  → ls projects/ to browse · cat projects/&lt;name&gt;.md for details',
         '<br>',
       ]

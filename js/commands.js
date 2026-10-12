@@ -16,10 +16,13 @@ secret = [
 
 projects = [
   "<br>",
-  "<span class=\"command\">rtalk.md</span>              AI-powered conversations for language learning",
-  "<span class=\"command\">studybuddy.md</span>         Personal assistant for every student",
-  "<span class=\"command\">tradequest.md</span>         Risk-free trading platform for beginners",
-  "<span class=\"command\">movie-recommender.md</span>  Personalized recommendations with collaborative filtering",
+  "<span class=\"command\">expense-sharing-app.md</span>            Split group expenses and settle up, Splitwise-style",
+  "<span class=\"command\">vulnerability-triage-platform.md</span>  Deduplicates scanner findings across a GitHub org into triaged issues",
+  "<span class=\"command\">riscv-hardware-diagnostics.md</span>     RISC-V emulator with firmware that catches injected hardware faults",
+  "<span class=\"command\">collaborative-editor.md</span>           Real-time collaborative editor with a from-scratch CRDT",
+  "<span class=\"command\">language-learning-ai.md</span>           AI-powered conversations for language learning",
+  "<span class=\"command\">paper-trading-platform.md</span>         Risk-free trading platform for beginners",
+  "<span class=\"command\">movie-recommendation-engine.md</span>    Personalized recommendations with collaborative filtering",
   "<br>",
   "<span class=\"color2\">Run </span><span class=\"command\">ls projects/</span><span class=\"color2\"> to browse · </span><span class=\"command\">cat projects/&lt;name&gt;.md</span><span class=\"color2\"> for details</span>",
   "<br>",
@@ -62,4 +65,4 @@ banner_welcome = [
   '<span class="color2">Welcome to my den.</span>',
   "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
   "<br>",
-]
+]
